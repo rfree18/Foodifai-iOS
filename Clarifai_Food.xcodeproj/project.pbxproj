@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFB27D41CB06238005614AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D31CB06238005614AD /* main.m */; };
+		FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D61CB06238005614AD /* AppDelegate.m */; };
+		FAFB27DA1CB06238005614AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D91CB06238005614AD /* ViewController.m */; };
+		FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DB1CB06238005614AD /* Main.storyboard */; };
+		FAFB27DF1CB06238005614AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DE1CB06238005614AD /* Assets.xcassets */; };
+		FAFB27E21CB06238005614AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAFB27D61CB06238005614AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAFB27D81CB06238005614AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAFB27D91CB06238005614AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAFB27DC1CB06238005614AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFB27DE1CB06238005614AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFB27E11CB06238005614AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFB27E31CB06239005614AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFB27CC1CB06238005614AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFB27C61CB06238005614AD = {
+			isa = PBXGroup;
+			children = (
+				FAFB27D11CB06238005614AD /* Clarifai_Food */,
+				FAFB27D01CB06238005614AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFB27D01CB06238005614AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB27CF1CB06238005614AD /* Clarifai_Food.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFB27D11CB06238005614AD /* Clarifai_Food */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB27D51CB06238005614AD /* AppDelegate.h */,
+				FAFB27D61CB06238005614AD /* AppDelegate.m */,
+				FAFB27D81CB06238005614AD /* ViewController.h */,
+				FAFB27D91CB06238005614AD /* ViewController.m */,
+				FAFB27DB1CB06238005614AD /* Main.storyboard */,
+				FAFB27DE1CB06238005614AD /* Assets.xcassets */,
+				FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */,
+				FAFB27E31CB06239005614AD /* Info.plist */,
+				FAFB27D21CB06238005614AD /* Supporting Files */,
+			);
+			path = Clarifai_Food;
+			sourceTree = "<group>";
+		};
+		FAFB27D21CB06238005614AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB27D31CB06238005614AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFB27CE1CB06238005614AD /* Clarifai_Food */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Clarifai_Food" */;
+			buildPhases = (
+				FAFB27CB1CB06238005614AD /* Sources */,
+				FAFB27CC1CB06238005614AD /* Frameworks */,
+				FAFB27CD1CB06238005614AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clarifai_Food;
+			productName = Clarifai_Food;
+			productReference = FAFB27CF1CB06238005614AD /* Clarifai_Food.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFB27C71CB06238005614AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ross Freeman";
+				TargetAttributes = {
+					FAFB27CE1CB06238005614AD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Clarifai_Food" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFB27C61CB06238005614AD;
+			productRefGroup = FAFB27D01CB06238005614AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFB27CE1CB06238005614AD /* Clarifai_Food */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFB27CD1CB06238005614AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB27E21CB06238005614AD /* LaunchScreen.storyboard in Resources */,
+				FAFB27DF1CB06238005614AD /* Assets.xcassets in Resources */,
+				FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFB27CB1CB06238005614AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB27DA1CB06238005614AD /* ViewController.m in Sources */,
+				FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */,
+				FAFB27D41CB06238005614AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAFB27DB1CB06238005614AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFB27DC1CB06238005614AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFB27E11CB06238005614AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFB27E41CB06239005614AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAFB27E51CB06239005614AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFB27E71CB06239005614AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clarifai_Food/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAFB27E81CB06239005614AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clarifai_Food/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Clarifai_Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB27E41CB06239005614AD /* Debug */,
+				FAFB27E51CB06239005614AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Clarifai_Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB27E71CB06239005614AD /* Debug */,
+				FAFB27E81CB06239005614AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFB27C71CB06238005614AD /* Project object */;
+}
