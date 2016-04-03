@@ -35,8 +35,10 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
+    NSString *tags = [self.keywords componentsJoinedByString:@","];
+    
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:0];
-    params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": @"40.7, -70.4", @"section": @"food", @"query": self.keywords} mutableCopy];
+    params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": @"40.7, -74", @"section": @"food", @"query": tags} mutableCopy];
     
     [manager GET:kApiBaseUrl parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         //NSDictionary *info = responseObject[1];
@@ -69,7 +71,7 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restuarant"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restaurant"];
     
     RFVenue *venue = self.venues[indexPath.row];
     
