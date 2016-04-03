@@ -137,11 +137,40 @@
                     <navigationItem key="navigationItem" id="WcW-Kz-nFh"/>
                     <connections>
                         <outlet property="tableView" destination="IJb-EH-kD7" id="cdE-Zn-bIx"/>
+                        <segue destination="cQF-bQ-uqM" kind="push" identifier="showDetails" id="wVK-i3-Xht"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAy-yR-PPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1943" y="269"/>
+        </scene>
+        <!--Venue Detail View Controller-->
+        <scene sceneID="qUa-tn-wLF">
+            <objects>
+                <viewController id="cQF-bQ-uqM" customClass="RFVenueDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u65-Xj-mRX"/>
+                        <viewControllerLayoutGuide type="bottom" id="HvU-7C-DoS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="unR-bx-AaF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-vH-e4c" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="283" width="320" height="285"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q46-hx-qkL"/>
+                    <connections>
+                        <outlet property="mapView" destination="AKR-vH-e4c" id="TVZ-Lw-FbI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znM-n9-np7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="269"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0j1-gd-SbN">

@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) double rating;
+@property (strong, nonatomic) NSString *address;
+
+@property (strong, nonatomic) NSMutableArray *coordinates;
 
 
 -(id)initWithData:(NSDictionary *)data;

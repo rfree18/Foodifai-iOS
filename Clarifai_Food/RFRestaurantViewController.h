@@ -14,6 +14,7 @@
 
 #import "RFCredentials.h"
 #import "RFVenue.h"
+#import "RFVenueDetailViewController.h"
 
 @interface RFRestaurantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 

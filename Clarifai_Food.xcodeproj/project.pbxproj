@@ -14,6 +14,7 @@
 		FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */; };
 		FA9D785F1CB0BB1A00DE1DB1 /* RFVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */; };
 		FA9D78611CB0D95C00DE1DB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */; };
+		FA9D78641CB0EE8700DE1DB1 /* RFVenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78631CB0EE8700DE1DB1 /* RFVenueDetailViewController.m */; };
 		FAFB27D41CB06238005614AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D31CB06238005614AD /* main.m */; };
 		FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D61CB06238005614AD /* AppDelegate.m */; };
 		FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DB1CB06238005614AD /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 		FA9D785D1CB0BB1A00DE1DB1 /* RFVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFVenue.h; sourceTree = "<group>"; };
 		FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFVenue.m; sourceTree = "<group>"; };
 		FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA9D78621CB0EE8700DE1DB1 /* RFVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFVenueDetailViewController.h; sourceTree = "<group>"; };
+		FA9D78631CB0EE8700DE1DB1 /* RFVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFVenueDetailViewController.m; sourceTree = "<group>"; };
 		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */,
 				FA9D785A1CB0ACE400DE1DB1 /* RFRestaurantViewController.h */,
 				FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */,
+				FA9D78621CB0EE8700DE1DB1 /* RFVenueDetailViewController.h */,
+				FA9D78631CB0EE8700DE1DB1 /* RFVenueDetailViewController.m */,
 				FAFB27DB1CB06238005614AD /* Main.storyboard */,
 				FAFB27DE1CB06238005614AD /* Assets.xcassets */,
 				FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */,
@@ -259,6 +264,7 @@
 				FAFB27D41CB06238005614AD /* main.m in Sources */,
 				FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */,
 				FAFB27EB1CB06297005614AD /* RFPhotoSubmissionViewController.m in Sources */,
+				FA9D78641CB0EE8700DE1DB1 /* RFVenueDetailViewController.m in Sources */,
 				FA9D78531CB09C7600DE1DB1 /* RFTagViewController.m in Sources */,
 				FA9D78561CB0A03000DE1DB1 /* ClarifaiClient.m in Sources */,
 				FA9D785F1CB0BB1A00DE1DB1 /* RFVenue.m in Sources */,
