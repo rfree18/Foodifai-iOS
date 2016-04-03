@@ -121,6 +121,13 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     cell.textLabel.text = venue.name;
     cell.backgroundColor = [UIColor clearColor];
     
+    UIView *customColorView = [[UIView alloc] init];
+    customColorView.backgroundColor = [UIColor colorWithRed:180/255.0
+                                                      green:138/255.0
+                                                       blue:171/255.0
+                                                      alpha:0.25];
+    cell.selectedBackgroundView =  customColorView;
+    
     return cell;
 }
 

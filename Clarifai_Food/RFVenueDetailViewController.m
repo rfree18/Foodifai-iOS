@@ -60,7 +60,10 @@
     [[BTNDropinButton appearance] setBorderColor:[UIColor whiteColor]];
     [[BTNDropinButton appearance] setTextColor:[UIColor whiteColor]];
     [[BTNDropinButton appearance] setCornerRadius:10];
-    [[BTNDropinButton appearance] setHighlightedBackgroundColor:[UIColor colorWithRed:0.200 green:0.200 blue:0.200 alpha:0.50]];
+    [[BTNDropinButton appearance] setHighlightedBackgroundColor:[UIColor colorWithRed:180/255.0
+                                                                                green:138/255.0
+                                                                                 blue:171/255.0
+                                                                                alpha:0.25]];
     
     [self.uberButton prepareWithContext:context completion:^(BOOL isDisplayable) {
         if (!isDisplayable) {

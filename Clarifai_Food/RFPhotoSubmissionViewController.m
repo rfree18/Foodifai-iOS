@@ -133,7 +133,20 @@
 }
 
 - (IBAction)submitPhoto:(id)sender {
-    [self performSegueWithIdentifier:@"showDetails" sender:self];
+    if (self.imageView.image == nil) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Uh-Oh"
+                                                                       message:@"Make sure you choose a photo!"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else {
+        [self performSegueWithIdentifier:@"showDetails" sender:self];
+    }
     
 }
 @end
