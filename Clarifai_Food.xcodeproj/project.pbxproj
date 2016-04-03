@@ -13,6 +13,7 @@
 		FA9D78591CB0A1A200DE1DB1 /* RFCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */; };
 		FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */; };
 		FA9D785F1CB0BB1A00DE1DB1 /* RFVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */; };
+		FA9D78611CB0D95C00DE1DB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */; };
 		FAFB27D41CB06238005614AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D31CB06238005614AD /* main.m */; };
 		FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D61CB06238005614AD /* AppDelegate.m */; };
 		FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DB1CB06238005614AD /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRestaurantViewController.m; sourceTree = "<group>"; };
 		FA9D785D1CB0BB1A00DE1DB1 /* RFVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFVenue.h; sourceTree = "<group>"; };
 		FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFVenue.m; sourceTree = "<group>"; };
+		FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9D78611CB0D95C00DE1DB1 /* CoreLocation.framework in Frameworks */,
 				2988531DB37C10DA17FDBC15 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +74,7 @@
 		E958E33B679189271FE0BD25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */,
 				BC86A79417DF408FC9DFE2B5 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -162,6 +166,7 @@
 				TargetAttributes = {
 					FAFB27CE1CB06238005614AD = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 247UT9T8WT;
 					};
 				};
 			};
@@ -369,6 +374,7 @@
 			baseConfigurationReference = 3D15772474495ABF9BDF4D55 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";
@@ -381,6 +387,7 @@
 			baseConfigurationReference = 41D730EC4D37A828FEB8CA29 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";

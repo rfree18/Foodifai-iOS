@@ -21,8 +21,7 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     // Do any additional setup after loading the view.
     
     self.venues = [[NSMutableArray alloc] init];
-    
-    [self getRestaurants];
+    [self getLocation];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +37,7 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     NSString *tags = [self.keywords componentsJoinedByString:@","];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:0];
-    params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": @"40.7, -74", @"section": @"food", @"query": tags} mutableCopy];
+    params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": self.location, @"query": tags} mutableCopy];
     
     [manager GET:kApiBaseUrl parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         //NSDictionary *info = responseObject[1];
@@ -58,6 +57,40 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
         NSLog(@"%@", error.localizedDescription);
     }];
+}
+
+-(void)getLocation {
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        [self.locationManager requestWhenInUseAuthorization];
+    
+    [self.locationManager startUpdatingLocation];}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    // If it's a relatively recent event, turn off updates to save power.
+    CLLocation* location = [locations lastObject];
+    NSDate* eventDate = location.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (fabs(howRecent) < 15.0) {
+        // If the event is recent, do something with it.
+        NSLog(@"latitude %+.6f, longitude %+.6f\n",
+              location.coordinate.latitude,
+              location.coordinate.longitude);
+        self.location = [NSString stringWithFormat:@"%.6f, %.6f", location.coordinate.latitude, location.coordinate.longitude];
+        [self.locationManager stopUpdatingLocation];
+        
+        [self getRestaurants];
+    }
 }
 
 #pragma mark - Table view

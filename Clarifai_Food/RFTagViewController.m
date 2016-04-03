@@ -66,7 +66,7 @@
             ClarifaiResult *result = results.firstObject;
             self.textView.text = [NSString stringWithFormat:@"Tags:\n%@", [result.tags componentsJoinedByString:@", "]];
             
-            self.tags = [result.tags subarrayWithRange:NSMakeRange(0, 2)];
+            self.tags = [result.tags subarrayWithRange:NSMakeRange(0, 3)];
             
             for (NSString *tag in self.tags) {
                 NSLog(@"%@", tag);
