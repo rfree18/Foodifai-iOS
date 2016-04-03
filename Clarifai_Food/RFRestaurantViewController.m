@@ -28,6 +28,10 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     
     self.venues = [[NSMutableArray alloc] init];
     
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Sunset"]];
+    
+    self.tableView.backgroundView = imageView;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -115,12 +119,14 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     RFVenue *venue = self.venues[indexPath.row];
     
     cell.textLabel.text = venue.name;
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"showDetails" sender:indexPath];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - Clarifai

@@ -40,7 +40,7 @@
 		FA9D78601CB0D95C00DE1DB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FA9D78621CB0EE8700DE1DB1 /* RFVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFVenueDetailViewController.h; sourceTree = "<group>"; };
 		FA9D78631CB0EE8700DE1DB1 /* RFVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFVenueDetailViewController.m; sourceTree = "<group>"; };
-		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFB27CF1CB06238005614AD /* Foodifai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodifai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAFB27D61CB06238005614AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		FAFB27D01CB06238005614AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAFB27CF1CB06238005614AD /* Clarifai_Food.app */,
+				FAFB27CF1CB06238005614AD /* Foodifai.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAFB27CE1CB06238005614AD /* Clarifai_Food */ = {
+		FAFB27CE1CB06238005614AD /* Foodifai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Clarifai_Food" */;
+			buildConfigurationList = FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Foodifai" */;
 			buildPhases = (
 				4445DFD3E11FE9954930B024 /* Check Pods Manifest.lock */,
 				FAFB27CB1CB06238005614AD /* Sources */,
@@ -155,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = Clarifai_Food;
+			name = Foodifai;
 			productName = Clarifai_Food;
-			productReference = FAFB27CF1CB06238005614AD /* Clarifai_Food.app */;
+			productReference = FAFB27CF1CB06238005614AD /* Foodifai.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Clarifai_Food" */;
+			buildConfigurationList = FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Foodifai" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAFB27CE1CB06238005614AD /* Clarifai_Food */,
+				FAFB27CE1CB06238005614AD /* Foodifai */,
 			);
 		};
 /* End PBXProject section */
@@ -383,8 +383,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossfreeman.Foodifai;
+				PRODUCT_NAME = Foodifai;
 			};
 			name = Debug;
 		};
@@ -396,15 +396,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rossfreeman.Clarifai-Food";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossfreeman.Foodifai;
+				PRODUCT_NAME = Foodifai;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Clarifai_Food" */ = {
+		FAFB27CA1CB06238005614AD /* Build configuration list for PBXProject "Foodifai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAFB27E41CB06239005614AD /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Clarifai_Food" */ = {
+		FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Foodifai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAFB27E71CB06239005614AD /* Debug */,

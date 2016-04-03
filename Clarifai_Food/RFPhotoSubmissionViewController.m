@@ -19,11 +19,24 @@
     // Do any additional setup after loading the view.
     
     self.capturedImages = [[NSMutableArray alloc] init];
+    
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        // There is not a camera on this device, so don't show the camera button.
+        NSMutableArray *toolbarItems = [self.toolbar.items mutableCopy];
+        [toolbarItems removeObjectAtIndex:2];
+        [self.toolbar setItems:toolbarItems animated:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)showImagePickerForCamera:(id)sender
+{
+    [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeCamera];
 }
 
 - (IBAction)showImagePickerForPhotoPicker:(id)sender

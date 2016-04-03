@@ -57,7 +57,8 @@
     
     // Prepare the Button for display
     [[BTNDropinButton appearance] setBorderWidth:1];
-    [[BTNDropinButton appearance] setBorderColor:[UIColor blackColor]];
+    [[BTNDropinButton appearance] setBorderColor:[UIColor whiteColor]];
+    [[BTNDropinButton appearance] setTextColor:[UIColor whiteColor]];
     [[BTNDropinButton appearance] setCornerRadius:10];
     [[BTNDropinButton appearance] setHighlightedBackgroundColor:[UIColor colorWithRed:0.200 green:0.200 blue:0.200 alpha:0.50]];
     
