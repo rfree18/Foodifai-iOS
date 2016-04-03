@@ -23,6 +23,9 @@
         [self.coordinates addObject:[locationInfo objectForKey:@"lng"]];
         [self.coordinates addObject:[locationInfo objectForKey:@"lat"]];
         self.address = [NSString stringWithFormat:@"%@\n%@, %@ %@", [locationInfo objectForKey:@"address"], [locationInfo objectForKey:@"city"], [locationInfo objectForKey:@"state"], [locationInfo objectForKey:@"postalCode"]];
+        
+        NSDictionary *hours = [venueInfo objectForKey:@"hours"];
+        self.status = [hours objectForKey:@"status"];
     }
     
     return self;

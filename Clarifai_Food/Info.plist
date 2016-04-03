@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uber</string>
+		<string>reservetable-com.contextoptional.OpenTable-1</string>
+		<string>drizly</string>
+		<string>button</string>
+		<string>ticketmaster</string>
+		<string>resy</string>
+		<string>parkingpanda</string>
+		<string>airbnb</string>
+		<string>zeel</string>
+		<string>glamsquad</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Get nearby locations</string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -19,6 +19,16 @@
     
     self.navigationItem.title = _venue.name;
     
+    self.uberButton.backgroundColor = [UIColor clearColor];
+    
+    if (_venue.status != nil) {
+        self.statusLabel.text = _venue.status;
+    }
+    
+    else {
+        self.statusLabel.text = @"No Status Available";
+    }
+    
     double x = [_venue.coordinates[1] doubleValue];
     double y = [_venue.coordinates[0] doubleValue];
     
@@ -39,6 +49,21 @@
     marker.map = _mapView;
     
     _mapView.selectedMarker = marker;
+    
+    BTNLocation *location = [BTNLocation locationWithName:self.venue.name
+                                                 latitude:x
+                                                longitude:y];
+    BTNContext *context = [BTNContext contextWithSubjectLocation:location];
+    
+    // Prepare the Button for display
+    [[BTNDropinButton appearance] setBorderWidth:1];
+    [[BTNDropinButton appearance] setBorderColor:[UIColor blackColor]];
+    
+    [self.uberButton prepareWithContext:context completion:^(BOOL isDisplayable) {
+        if (!isDisplayable) {
+            // If a button has no action, it completes as not displayable.
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -22,6 +22,9 @@
     
     [GMSServices provideAPIKey:@"AIzaSyASeBUCDEmIw-QcS-iaWJ9RQGFcI77RgCk"];
     
+    [[Button sharedButton] configureWithApplicationId:@"app-56cf69ab0cdab064"
+                                           completion:NULL];
+    
     return YES;
 }
 

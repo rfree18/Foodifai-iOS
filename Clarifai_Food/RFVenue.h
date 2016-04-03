@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) double rating;
 @property (strong, nonatomic) NSString *address;
-
+@property (strong, nonatomic) NSString *status;
 @property (strong, nonatomic) NSMutableArray *coordinates;
 
 
