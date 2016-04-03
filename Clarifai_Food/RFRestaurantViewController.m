@@ -18,10 +18,16 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view
+    
+    self.client = [self client];
+    
+    self.tags = [[NSArray alloc] init];
+    
+    [self recognizeImage:self.image];
     
     self.venues = [[NSMutableArray alloc] init];
-    [self getLocation];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +40,7 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
-    NSString *tags = [self.keywords componentsJoinedByString:@","];
+    NSString *tags = [self.tags componentsJoinedByString:@","];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:0];
     params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": self.location, @"query": tags} mutableCopy];
@@ -115,6 +121,45 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"showDetails" sender:indexPath];
+}
+
+#pragma mark - Clarifai
+
+- (ClarifaiClient *)client {
+    if (!_client) {
+        _client = [[ClarifaiClient alloc] initWithAppID:clarifaiClientId appSecret:clarifaiClientSecret];
+    }
+    return _client;
+}
+
+- (void)recognizeImage:(UIImage *)image {
+    // Scale down the image. This step is optional. However, sending large images over the
+    // network is slow and does not significantly improve recognition performance.
+    CGSize size = CGSizeMake(320, 320 * image.size.height / image.size.width);
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    // Encode as a JPEG.
+    NSData *jpeg = UIImageJPEGRepresentation(scaledImage, 0.9);
+    
+    // Send the JPEG to Clarifai for standard image tagging.
+    [self.client recognizeJpegs:@[jpeg] completion:^(NSArray *results, NSError *error) {
+        // Handle the response from Clarifai. This happens asynchronously.
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            ClarifaiResult *result = results.firstObject;
+            
+            self.tags = [result.tags subarrayWithRange:NSMakeRange(0, 3)];
+            
+            for (NSString *tag in self.tags) {
+                NSLog(@"%@", tag);
+            }
+        }
+        [self getLocation];
+    }];
 }
 
 

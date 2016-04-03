@@ -30,14 +30,18 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mt-Ef-64a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mt-Ef-64a">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="W0l-Wf-svX" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" id="0IV-wU-vbx"/>
+                            <constraint firstItem="8mt-Ef-64a" firstAttribute="top" secondItem="psY-YZ-cZX" secondAttribute="top" id="9lh-SQ-5UU"/>
+                            <constraint firstAttribute="trailing" secondItem="8mt-Ef-64a" secondAttribute="trailing" id="CIQ-Dc-tFN"/>
                             <constraint firstItem="FDI-Mq-qBk" firstAttribute="top" secondItem="W0l-Wf-svX" secondAttribute="bottom" id="CSP-XC-2kf"/>
+                            <constraint firstItem="8mt-Ef-64a" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" id="HOD-qH-lk3"/>
+                            <constraint firstItem="W0l-Wf-svX" firstAttribute="top" secondItem="8mt-Ef-64a" secondAttribute="bottom" id="T3l-IL-XoM"/>
                             <constraint firstAttribute="trailing" secondItem="W0l-Wf-svX" secondAttribute="trailing" id="Vwd-zO-BSu"/>
                         </constraints>
                     </view>
@@ -50,50 +54,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="8mt-Ef-64a" id="iat-e2-rzr"/>
-                        <segue destination="qle-7J-Ydn" kind="push" identifier="showTags" id="t3A-ry-n83"/>
+                        <segue destination="1eN-SJ-BPR" kind="push" identifier="showDetails" id="OCy-AL-6l7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJO-Ax-7bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1134" y="269"/>
-        </scene>
-        <!--Tag View Controller-->
-        <scene sceneID="9Pj-VU-hBE">
-            <objects>
-                <viewController id="qle-7J-Ydn" customClass="RFTagViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cq6-nk-KOu"/>
-                        <viewControllerLayoutGuide type="bottom" id="5BL-BP-eQl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WVA-in-tdn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4fO-E6-S3w">
-                                <rect key="frame" x="0.0" y="72" width="320" height="371"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TER-Sc-IvN">
-                                <rect key="frame" x="137" y="465" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="1eN-SJ-BPR" kind="push" id="fKG-mE-wuK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8ur-Ii-S1W"/>
-                    <connections>
-                        <outlet property="textView" destination="4fO-E6-S3w" id="3xK-9W-mjc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzf-Su-cBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1556" y="269"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="l1y-hz-gTJ">
@@ -142,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAy-yR-PPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="269"/>
+            <point key="canvasLocation" x="1525" y="269"/>
         </scene>
         <!--Venue Detail View Controller-->
         <scene sceneID="qUa-tn-wLF">
@@ -156,12 +122,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-vH-e4c" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="283" width="320" height="285"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-vH-e4c" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="208" width="320" height="360"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AKR-vH-e4c" secondAttribute="trailing" id="PIB-Ms-n5v"/>
+                            <constraint firstItem="AKR-vH-e4c" firstAttribute="top" secondItem="u65-Xj-mRX" secondAttribute="bottom" constant="144" id="gO2-xW-L3k"/>
+                            <constraint firstItem="HvU-7C-DoS" firstAttribute="top" secondItem="AKR-vH-e4c" secondAttribute="bottom" id="lhO-HH-6G0"/>
+                            <constraint firstItem="AKR-vH-e4c" firstAttribute="leading" secondItem="unR-bx-AaF" secondAttribute="leading" id="qua-xM-TXV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q46-hx-qkL"/>
                     <connections>
@@ -170,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znM-n9-np7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="269"/>
+            <point key="canvasLocation" x="1914" y="269"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0j1-gd-SbN">

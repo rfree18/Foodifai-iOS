@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RFTagViewController.h"
+#import "RFRestaurantViewController.h"
 
 @interface RFPhotoSubmissionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 

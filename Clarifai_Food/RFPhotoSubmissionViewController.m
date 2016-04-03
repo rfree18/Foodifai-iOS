@@ -112,7 +112,7 @@
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    RFTagViewController *dest = (RFTagViewController *)[segue destinationViewController];
+    RFRestaurantViewController *dest = [segue destinationViewController];
     
     UIImage *image = self.imageView.image;
     
@@ -120,7 +120,7 @@
 }
 
 - (IBAction)submitPhoto:(id)sender {
-    [self performSegueWithIdentifier:@"showTags" sender:self];
+    [self performSegueWithIdentifier:@"showDetails" sender:self];
     
 }
 @end

@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = _venue.name;
+    
     double x = [_venue.coordinates[1] doubleValue];
     double y = [_venue.coordinates[0] doubleValue];
     

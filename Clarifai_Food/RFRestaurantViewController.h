@@ -12,6 +12,7 @@
 
 @import CoreLocation;
 
+#import "ClarifaiClient.h"
 #import "RFCredentials.h"
 #import "RFVenue.h"
 #import "RFVenueDetailViewController.h"
@@ -19,7 +20,9 @@
 @interface RFRestaurantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray *keywords;
+@property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) ClarifaiClient *client;
+@property (strong, nonatomic) NSArray *tags;
 @property (strong, nonatomic) NSMutableArray *venues;
 @property (strong, nonatomic) NSString *location;
 @property (strong, nonatomic) CLLocationManager *locationManager;
