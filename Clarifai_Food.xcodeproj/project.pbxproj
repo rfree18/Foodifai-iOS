@@ -12,6 +12,7 @@
 		FA9D78561CB0A03000DE1DB1 /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78551CB0A03000DE1DB1 /* ClarifaiClient.m */; };
 		FA9D78591CB0A1A200DE1DB1 /* RFCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */; };
 		FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */; };
+		FA9D785F1CB0BB1A00DE1DB1 /* RFVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */; };
 		FAFB27D41CB06238005614AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D31CB06238005614AD /* main.m */; };
 		FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D61CB06238005614AD /* AppDelegate.m */; };
 		FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DB1CB06238005614AD /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 		FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCredentials.m; sourceTree = "<group>"; };
 		FA9D785A1CB0ACE400DE1DB1 /* RFRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRestaurantViewController.h; sourceTree = "<group>"; };
 		FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRestaurantViewController.m; sourceTree = "<group>"; };
+		FA9D785D1CB0BB1A00DE1DB1 /* RFVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFVenue.h; sourceTree = "<group>"; };
+		FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFVenue.m; sourceTree = "<group>"; };
 		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				FAFB27EA1CB06297005614AD /* RFPhotoSubmissionViewController.m */,
 				FA9D78511CB09C7600DE1DB1 /* RFTagViewController.h */,
 				FA9D78521CB09C7600DE1DB1 /* RFTagViewController.m */,
+				FA9D785D1CB0BB1A00DE1DB1 /* RFVenue.h */,
+				FA9D785E1CB0BB1A00DE1DB1 /* RFVenue.m */,
 				FA9D785A1CB0ACE400DE1DB1 /* RFRestaurantViewController.h */,
 				FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */,
 				FAFB27DB1CB06238005614AD /* Main.storyboard */,
@@ -251,6 +256,7 @@
 				FAFB27EB1CB06297005614AD /* RFPhotoSubmissionViewController.m in Sources */,
 				FA9D78531CB09C7600DE1DB1 /* RFTagViewController.m in Sources */,
 				FA9D78561CB0A03000DE1DB1 /* ClarifaiClient.m in Sources */,
+				FA9D785F1CB0BB1A00DE1DB1 /* RFVenue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

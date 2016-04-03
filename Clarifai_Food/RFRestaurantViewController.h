@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
 
-@interface RFRestaurantViewController : UIViewController
+#import "RFCredentials.h"
+
+@interface RFRestaurantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) NSArray *keywords;
+
+-(void)getRestaurants;
 
 @end

@@ -11,5 +11,7 @@
 
 extern NSString *const clarifaiClientId;
 extern NSString *const clarifaiClientSecret;
+extern NSString *const fourClientId;
+extern NSString *const fourClientSecret;
 
 #endif

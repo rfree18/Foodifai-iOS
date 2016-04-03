@@ -8,6 +8,8 @@
 
 #import "RFRestaurantViewController.h"
 
+static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/explore";
+
 @interface RFRestaurantViewController ()
 
 @end
@@ -22,6 +24,31 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)getRestaurants {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:0];
+    params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": @"40.7, -70.4", @"section": @"food", @"query": self.keywords} mutableCopy];
+}
+
+#pragma mark - Table view
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restuarant"];
+    
+    return cell;
 }
 
 /*

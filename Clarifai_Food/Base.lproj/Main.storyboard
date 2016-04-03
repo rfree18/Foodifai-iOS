@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1556" y="269"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant View Controller-->
         <scene sceneID="l1y-hz-gTJ">
             <objects>
-                <viewController id="1eN-SJ-BPR" sceneMemberID="viewController">
+                <viewController id="1eN-SJ-BPR" customClass="RFRestaurantViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fID-2M-z5V"/>
                         <viewControllerLayoutGuide type="bottom" id="wDZ-f0-aKA"/>
@@ -120,6 +120,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1eN-SJ-BPR" id="W8I-gw-wkT"/>
+                                    <outlet property="delegate" destination="1eN-SJ-BPR" id="hT7-KF-tdm"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,6 +135,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WcW-Kz-nFh"/>
+                    <connections>
+                        <outlet property="tableView" destination="IJb-EH-kD7" id="cdE-Zn-bIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAy-yR-PPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
