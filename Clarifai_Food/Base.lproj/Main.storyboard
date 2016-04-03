@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Submission View Controller-->
+        <!--Foodifai-->
         <scene sceneID="KIs-Os-lMy">
             <objects>
                 <viewController id="4BR-nM-6vq" customClass="RFPhotoSubmissionViewController" sceneMemberID="viewController">
@@ -41,6 +41,12 @@
                                 </items>
                                 <color key="tintColor" red="0.70588235290000001" green="0.54117647059999996" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an option below to select a photo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1y-nn-Dcc">
+                                <rect key="frame" x="38" y="263.5" width="244" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mt-Ef-64a">
                                 <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                             </imageView>
@@ -48,19 +54,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="W0l-Wf-svX" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" id="0IV-wU-vbx"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1y-nn-Dcc" secondAttribute="trailing" constant="38" id="3PK-LG-j0b"/>
                             <constraint firstItem="das-wY-Gc8" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" id="8Ef-d8-MIe"/>
                             <constraint firstAttribute="trailing" secondItem="8mt-Ef-64a" secondAttribute="trailing" id="CIQ-Dc-tFN"/>
                             <constraint firstItem="FDI-Mq-qBk" firstAttribute="top" secondItem="W0l-Wf-svX" secondAttribute="bottom" id="CSP-XC-2kf"/>
                             <constraint firstItem="8mt-Ef-64a" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" id="HOD-qH-lk3"/>
+                            <constraint firstItem="Q1y-nn-Dcc" firstAttribute="leading" secondItem="psY-YZ-cZX" secondAttribute="leading" constant="38" id="J46-yd-SZg"/>
                             <constraint firstItem="8mt-Ef-64a" firstAttribute="top" secondItem="ov3-O8-dKx" secondAttribute="bottom" id="QSo-SN-X7X"/>
                             <constraint firstItem="W0l-Wf-svX" firstAttribute="top" secondItem="8mt-Ef-64a" secondAttribute="bottom" id="T3l-IL-XoM"/>
                             <constraint firstAttribute="trailing" secondItem="W0l-Wf-svX" secondAttribute="trailing" id="Vwd-zO-BSu"/>
+                            <constraint firstItem="Q1y-nn-Dcc" firstAttribute="centerY" secondItem="psY-YZ-cZX" secondAttribute="centerY" id="XXW-i7-Z8p"/>
                             <constraint firstItem="W0l-Wf-svX" firstAttribute="top" secondItem="das-wY-Gc8" secondAttribute="bottom" id="aLV-Cx-yyZ"/>
+                            <constraint firstItem="Q1y-nn-Dcc" firstAttribute="centerX" secondItem="psY-YZ-cZX" secondAttribute="centerX" id="gPe-W9-tNP"/>
                             <constraint firstAttribute="trailing" secondItem="das-wY-Gc8" secondAttribute="trailing" id="myo-Cb-QHT"/>
                             <constraint firstItem="das-wY-Gc8" firstAttribute="top" secondItem="psY-YZ-cZX" secondAttribute="top" id="ndp-CQ-xMt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="E2Q-nf-XPw">
+                    <navigationItem key="navigationItem" title="Foodifai" id="E2Q-nf-XPw">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="qK1-TL-DiR">
                             <connections>
                                 <action selector="submitPhoto:" destination="4BR-nM-6vq" id="MCJ-sX-vPR"/>
