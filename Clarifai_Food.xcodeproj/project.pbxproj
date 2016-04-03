@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2988531DB37C10DA17FDBC15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC86A79417DF408FC9DFE2B5 /* libPods.a */; };
+		FA9D78531CB09C7600DE1DB1 /* RFTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78521CB09C7600DE1DB1 /* RFTagViewController.m */; };
+		FA9D78561CB0A03000DE1DB1 /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78551CB0A03000DE1DB1 /* ClarifaiClient.m */; };
+		FA9D78591CB0A1A200DE1DB1 /* RFCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */; };
+		FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */; };
 		FAFB27D41CB06238005614AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D31CB06238005614AD /* main.m */; };
 		FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D61CB06238005614AD /* AppDelegate.m */; };
-		FAFB27DA1CB06238005614AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27D91CB06238005614AD /* ViewController.m */; };
 		FAFB27DD1CB06238005614AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DB1CB06238005614AD /* Main.storyboard */; };
 		FAFB27DF1CB06238005614AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27DE1CB06238005614AD /* Assets.xcassets */; };
 		FAFB27E21CB06238005614AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */; };
+		FAFB27EB1CB06297005614AD /* RFPhotoSubmissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFB27EA1CB06297005614AD /* RFPhotoSubmissionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D15772474495ABF9BDF4D55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		41D730EC4D37A828FEB8CA29 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BC86A79417DF408FC9DFE2B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9D78511CB09C7600DE1DB1 /* RFTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTagViewController.h; sourceTree = "<group>"; };
+		FA9D78521CB09C7600DE1DB1 /* RFTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTagViewController.m; sourceTree = "<group>"; };
+		FA9D78541CB0A03000DE1DB1 /* ClarifaiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClarifaiClient.h; sourceTree = "<group>"; };
+		FA9D78551CB0A03000DE1DB1 /* ClarifaiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClient.m; sourceTree = "<group>"; };
+		FA9D78571CB0A1A200DE1DB1 /* RFCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCredentials.h; sourceTree = "<group>"; };
+		FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCredentials.m; sourceTree = "<group>"; };
+		FA9D785A1CB0ACE400DE1DB1 /* RFRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRestaurantViewController.h; sourceTree = "<group>"; };
+		FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRestaurantViewController.m; sourceTree = "<group>"; };
 		FAFB27CF1CB06238005614AD /* Clarifai_Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clarifai_Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFB27D31CB06238005614AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAFB27D51CB06238005614AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAFB27D61CB06238005614AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAFB27D81CB06238005614AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAFB27D91CB06238005614AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAFB27DC1CB06238005614AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFB27DE1CB06238005614AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFB27E11CB06238005614AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFB27E31CB06239005614AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFB27E91CB06297005614AD /* RFPhotoSubmissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPhotoSubmissionViewController.h; sourceTree = "<group>"; };
+		FAFB27EA1CB06297005614AD /* RFPhotoSubmissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPhotoSubmissionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2988531DB37C10DA17FDBC15 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB77E73ABB597A13B8CF19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D15772474495ABF9BDF4D55 /* Pods.debug.xcconfig */,
+				41D730EC4D37A828FEB8CA29 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E958E33B679189271FE0BD25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC86A79417DF408FC9DFE2B5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAFB27C61CB06238005614AD = {
 			isa = PBXGroup;
 			children = (
 				FAFB27D11CB06238005614AD /* Clarifai_Food */,
 				FAFB27D01CB06238005614AD /* Products */,
+				3FB77E73ABB597A13B8CF19B /* Pods */,
+				E958E33B679189271FE0BD25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +96,16 @@
 			children = (
 				FAFB27D51CB06238005614AD /* AppDelegate.h */,
 				FAFB27D61CB06238005614AD /* AppDelegate.m */,
-				FAFB27D81CB06238005614AD /* ViewController.h */,
-				FAFB27D91CB06238005614AD /* ViewController.m */,
+				FA9D78541CB0A03000DE1DB1 /* ClarifaiClient.h */,
+				FA9D78551CB0A03000DE1DB1 /* ClarifaiClient.m */,
+				FA9D78571CB0A1A200DE1DB1 /* RFCredentials.h */,
+				FA9D78581CB0A1A200DE1DB1 /* RFCredentials.m */,
+				FAFB27E91CB06297005614AD /* RFPhotoSubmissionViewController.h */,
+				FAFB27EA1CB06297005614AD /* RFPhotoSubmissionViewController.m */,
+				FA9D78511CB09C7600DE1DB1 /* RFTagViewController.h */,
+				FA9D78521CB09C7600DE1DB1 /* RFTagViewController.m */,
+				FA9D785A1CB0ACE400DE1DB1 /* RFRestaurantViewController.h */,
+				FA9D785B1CB0ACE400DE1DB1 /* RFRestaurantViewController.m */,
 				FAFB27DB1CB06238005614AD /* Main.storyboard */,
 				FAFB27DE1CB06238005614AD /* Assets.xcassets */,
 				FAFB27E01CB06238005614AD /* LaunchScreen.storyboard */,
@@ -86,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFB27E61CB06239005614AD /* Build configuration list for PBXNativeTarget "Clarifai_Food" */;
 			buildPhases = (
+				4445DFD3E11FE9954930B024 /* Check Pods Manifest.lock */,
 				FAFB27CB1CB06238005614AD /* Sources */,
 				FAFB27CC1CB06238005614AD /* Frameworks */,
 				FAFB27CD1CB06238005614AD /* Resources */,
+				B70BA6E9EC50DF9881C2F2CC /* Embed Pods Frameworks */,
+				3364C79C1BABDD708F9A8229 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,14 +191,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3364C79C1BABDD708F9A8229 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4445DFD3E11FE9954930B024 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B70BA6E9EC50DF9881C2F2CC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAFB27CB1CB06238005614AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFB27DA1CB06238005614AD /* ViewController.m in Sources */,
+				FA9D78591CB0A1A200DE1DB1 /* RFCredentials.m in Sources */,
 				FAFB27D71CB06238005614AD /* AppDelegate.m in Sources */,
 				FAFB27D41CB06238005614AD /* main.m in Sources */,
+				FA9D785C1CB0ACE400DE1DB1 /* RFRestaurantViewController.m in Sources */,
+				FAFB27EB1CB06297005614AD /* RFPhotoSubmissionViewController.m in Sources */,
+				FA9D78531CB09C7600DE1DB1 /* RFTagViewController.m in Sources */,
+				FA9D78561CB0A03000DE1DB1 /* ClarifaiClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +360,7 @@
 		};
 		FAFB27E71CB06239005614AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D15772474495ABF9BDF4D55 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
@@ -272,6 +372,7 @@
 		};
 		FAFB27E81CB06239005614AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D730EC4D37A828FEB8CA29 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clarifai_Food/Info.plist;
@@ -300,6 +401,7 @@
 				FAFB27E81CB06239005614AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

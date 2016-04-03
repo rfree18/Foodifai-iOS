@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RFRestaurantViewController.h
 //  Clarifai_Food
 //
 //  Created by Ross Freeman on 4/2/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RFRestaurantViewController : UIViewController
 
 @end
-
