@@ -20,6 +20,8 @@
     
     self.client = [self client];
     
+    self.tags = [[NSArray alloc] init];
+    
     [self recognizeImage:self.image];
 }
 
@@ -63,6 +65,12 @@
         } else {
             ClarifaiResult *result = results.firstObject;
             self.textView.text = [NSString stringWithFormat:@"Tags:\n%@", [result.tags componentsJoinedByString:@", "]];
+            
+            self.tags = [result.tags subarrayWithRange:NSMakeRange(0, 2)];
+            
+            for (NSString *tag in self.tags) {
+                NSLog(@"%@", tag);
+            }
         }
     }];
 }
@@ -72,7 +80,8 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    RFRestaurantViewController *dest = [segue destinationViewController];
+    dest.keywords = self.tags;
 }
 
 

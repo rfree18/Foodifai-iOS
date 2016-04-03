@@ -10,11 +10,13 @@
 #import <AFNetworking/AFNetworking.h>
 
 #import "RFCredentials.h"
+#import "RFVenue.h"
 
 @interface RFRestaurantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) NSArray *keywords;
+@property (strong, nonatomic) NSArray *keywords;
+@property (strong, nonatomic) NSMutableArray *venues;
 
 -(void)getRestaurants;
 

@@ -10,4 +10,10 @@
 
 @interface RFVenue : NSObject
 
+@property (strong, nonatomic) NSString *name;
+@property (assign, nonatomic) double rating;
+
+
+-(id)initWithData:(NSDictionary *)data;
+
 @end

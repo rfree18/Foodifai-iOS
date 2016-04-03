@@ -19,6 +19,10 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.venues = [[NSMutableArray alloc] init];
+    
+    [self getRestaurants];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +37,25 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:0];
     params = [@{@"client_id":fourClientId, @"client_secret": fourClientSecret, @"v": @"20160402", @"ll": @"40.7, -70.4", @"section": @"food", @"query": self.keywords} mutableCopy];
+    
+    [manager GET:kApiBaseUrl parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        //NSDictionary *info = responseObject[1];
+        
+        NSLog(@"%@", operation.request.URL.absoluteString);
+        NSDictionary *info2 = [responseObject objectForKey:@"response"];
+        NSDictionary *info3 = [info2 objectForKey:@"groups"][0];
+        NSArray *info4 = [info3 objectForKey:@"items"];
+        
+        for (NSDictionary *restData in info4) {
+            RFVenue *venue = [[RFVenue alloc] initWithData:restData];
+            [self.venues addObject:venue];
+        }
+        
+        [self.tableView reloadData];
+        
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        NSLog(@"%@", error.localizedDescription);
+    }];
 }
 
 #pragma mark - Table view
@@ -42,11 +65,15 @@ static NSString *const kApiBaseUrl = @"https://api.foursquare.com/v2/venues/expl
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [self.venues count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restuarant"];
+    
+    RFVenue *venue = self.venues[indexPath.row];
+    
+    cell.textLabel.text = venue.name;
     
     return cell;
 }

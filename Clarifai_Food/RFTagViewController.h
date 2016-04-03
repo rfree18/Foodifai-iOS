@@ -11,11 +11,13 @@
 
 #import "ClarifaiClient.h"
 #import "RFCredentials.h"
+#import "RFRestaurantViewController.h"
 
 @interface RFTagViewController : UIViewController
 
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) ClarifaiClient *client;
+@property (strong, nonatomic) NSArray *tags;
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 

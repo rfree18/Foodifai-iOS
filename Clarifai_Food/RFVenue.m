@@ -10,4 +10,16 @@
 
 @implementation RFVenue
 
+-(id)initWithData:(NSDictionary *)data {
+    self = [super init];
+    
+    if (self) {
+        NSDictionary *venueInfo = [data objectForKey:@"venue"];
+        
+        self.name = [venueInfo objectForKey:@"name"];
+    }
+    
+    return self;
+}
+
 @end
